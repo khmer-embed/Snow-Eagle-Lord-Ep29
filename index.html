@@ -1,93 +1,28 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <script type="text/javascript" src="https://content.jwplatform.com/libraries/LJ361JYj.js"></script>
-    <link type="text/css" rel="stylesheet" href="styles/tests.css"  media="all" />
-</head>
+  </head>
 <body>
-<div id="video-container">before set up</div>
-<script type="text/javascript">
-(function(jwplayer) {
-    var config = {
-        // autostart: true,
-
-        width: '100%',
-        aspectratio: '16:9',
-
-        localization: {
-            play: 'Lecture',
-            playback: 'Lancer la lecture',
-            pause: 'Pause',
-            volume: 'Volume',
-            prev: 'Précédent',
-            next: 'Suivant',
-            cast: 'Chromecast',
-            airplay: 'AirPlay',
-            fullscreen: 'Plein écran',
-            playlist: 'Liste de lecture',
-            hd: 'Qualité',
-            cc: 'Sous-titres',
-            audioTracks: 'Pistes audio',
-            replay: 'Rejouer',
-            buffer: 'Chargement',
-            more: 'Plus',
-            liveBroadcast: 'Diffusion en direct',
-            loadingAd: 'Chargement de la publicité'
-        },
-
-        playlist: [
-            {
-                image:'https://puui.wetvinfo.com/vcover_hz_pic/0/jho08eh15kv9teg1687171055925/0',
-                sources: [
-                    {file: 'https://bigf.bigo.sg/asia_live/V4s7/2PKr4G.mp4'}
-                ],
-                tracks: [
-                    {file: '//playertest.longtailvideo.com/captions/sintel-ch.srt', label: 'Chinese'},
-                    {file: '//playertest.longtailvideo.com/captions/sintel-fa.srt', label: 'Farsi'},
-                ],
-                description : '',
-                title: ''
-            }
-       
-        ],
-        captions: {
-            preprocessor: function(rawText){ return rawText.replace(/e/g,'E') }
-        }
-    };
-
-    var jwp = jwplayer('video-container').setup(config);
-
-    jwp.addButton(
-        'css-skins/icons/both.png',
-        'TEST',
-        function() {
-            console.log('first');
-        },
-        'first'
-    );
-
-    jwp.addButton(
-        'css-skins/icons/both.png',
-        '',
-        function() {
-            console.log('first');
-        },
-        'first',
-        'custom-class-1'
-    );
-
-    jwp.addButton(
-        'css-skins/icons/both.png',
-        'Click to delete me!',
-        function() {
-            jwp.removeButton('second');
-        },
-        'second',
-        'custom-class-2'
-    );
-
-})(window.jwplayer);
-</script>
-</body>
+  <div class='video'>
+  <script src="https://use.fontawesome.com/20603b964f.js"></script>
+<script type="text/javascript" src="https://content.jwplatform.com/libraries/LJ361JYj.js"></script>
+		<script type="text/javascript">jwplayer.key = '=';</script><div id="myElement"></div><script type="text/javascript">
+					    jwplayer("myElement").setup({
+								image: "https://content.jwplatform.com/thumbs/xJ7Wcodt-720.jpg",
+					    		aspectratio: "16:9",
+								width: '100%',
+								aspectratio: '16:9',
+					    		autostart: false,
+				file : 'https://raw.githubusercontent.com/khmer-embed/My-Blue-Summer--2022--360p/master/My-Blue-Summer-(2022)-360p.m3u8',
+				abouttext: 'FILMKACA',
+				aboutlink: 'http://filmkaca.xyz',
+				captions: {color: '#ffb800',fontSize: 30,backgroundOpacity: 0},
+				sharing: {
+					sites: ['facebook','twitter','tumblr','googleplus',{icon: '//support-static.jwplayer.com/images/awesome.svg', src: 'http://www.jwplayer.com/?', label:'jwplayer'}],
+					code: encodeURI("<iframe src='<?php echo $sharing;?>' width='480' height='320'></iframe>"),
+					link: "<?php echo $sharing;?>"
+						}
+						    })
+					</script>
+  </div>
+  </body>
 </html>
